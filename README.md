@@ -32,6 +32,10 @@ RickMortyApi está basada para el uso en dispositivos de escritorio pero tambié
 <a href="https://angular.io/">
     <img src="media/momentjs.png" alt="Logo" width="500" height="200">
 </a>
+<br>
+<a href="https://sweetalert2.github.io/">
+    <img src="media/swal2-logo.png" alt="Logo" width="500" height="200">
+</a>
 
 ## Maquetación
 <img src="media/1.png" alt="Logo" width="600">
