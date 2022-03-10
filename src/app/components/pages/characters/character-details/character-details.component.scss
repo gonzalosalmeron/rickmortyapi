@@ -1,0 +1,162 @@
+.col { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.element {
+    margin: 10px;
+}
+
+.buttonGoTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    visibility: visible;
+}
+
+// CARD CSS
+
+.card {
+    position: relative;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid rgba(128, 128, 128, 0.226);
+    border-radius: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: 0px 2px 15px -8px #f8f8f8; 
+    box-shadow: 0px 2px 15px -8px #f8f8f8;
+    transition-duration: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.p-card-header {
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.p-card-body {
+    text-align: center;
+}
+
+.p-card .p-card-body {
+    padding: 15px 10px;
+}
+
+.p-card-title {
+    font-family: chakra-bold;
+    color: rgb(18, 16, 19);
+    margin-top: 15px;
+    
+}
+
+.budgeeee {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+}
+
+.p-card .p-card-subtitle {
+    color: rgb(144, 37, 148);
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: rubik-regular;
+}
+
+
+.p-card {
+    .p-card-content {
+        padding: 0;
+    }
+    .p-card-body {
+        background-color: white;
+        border-radius: 20px;
+    }
+}
+
+
+img {
+    border-radius: 100% !important;
+    width: 200px !important;
+    margin-bottom: -20px;
+    -webkit-box-shadow: 0px 6px 15px -8px #3D3D3D; 
+    box-shadow: 0px 6px 15px -8px #3D3D3D;
+    cursor: pointer;
+}
+
+.p-card-content p {
+    color: red;
+}
+.p-card-content > div > .alive {
+    background-color: blue;
+    width: 5px;
+    height: 5px;
+    
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#moreInfo {
+    padding: 15px 20px;
+    background: rgb(148,187,233);
+    background: radial-gradient(circle, rgba(148, 188, 233, 0.178) 0%, rgb(17, 10, 13) 100%);
+    border-radius: 40px;
+    margin-left: 40px;
+    max-width: 400px;
+    margin-top: 40px;
+
+    h1 {
+        font-family: rubik-bold;
+        color: rgb(241, 241, 241);
+        font-size: 24px;
+    }
+
+    p {
+        font-family: rubik-medium;
+        color: rgb(227, 226, 255);
+    }
+}
+
+#chartPolarArea {
+    padding: 15px 20px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 0.356) 0%, rgba(252, 70, 106, 0.418) 100%);
+    border-radius: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#chartRadar {
+    padding: 15px 20px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34, 192, 195, 0.37) 0%, rgba(253, 187, 45, 0.548) 100%);
+    border-radius: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+// LIKE BUTTON
+#likeButton {
+    width: 34px;
+    height: 34px;
+    z-index: 20;
+}
+
+.p-button.p-button-danger:enabled:focus {
+    box-shadow: none;
+}
+
+
+
+
+

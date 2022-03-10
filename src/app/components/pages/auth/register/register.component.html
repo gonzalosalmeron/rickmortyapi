@@ -1,0 +1,24 @@
+<div class="displayTable">
+    <div class="displayTableCell">
+      <div class="authBlock">
+        <h2 style="margin: 0 0 10px 0; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">Register</h2>
+
+        <div class="formGroup" style="margin-top: 30px;">
+          <label for="username1" style="display: block;">Email</label>
+          <input id="email" type="email" class="p-inputtext-sm" pInputText #email required>
+        </div>
+
+        <div class="formGroup" style="margin-top: 14px; margin-bottom: 10px;">
+          <label for="username1" style="display: block;">Password</label>
+          <input id="password" type="password" class="p-inputtext-sm" pInputText #password required>
+        </div>
+
+        <!-- Register with email -->
+        <div class="formGroup">
+            <button pButton pRipple type="button" label="Register" class="p-button-secondary p-button-sm" (click)="authService.SignUp(email.value, password.value)"></button>
+          </div>
+
+      </div>
+    </div>
+</div>
+  

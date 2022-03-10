@@ -1,0 +1,7 @@
+<p-card header="{{name}}" subheader="{{species}}" [style]="{width: '250px'}" styleClass="card">
+    <ng-template pTemplate="header">
+        <img [routerLink]="['/character-details', id]" alt="Card" src="{{ image }}">
+    </ng-template>
+    <button id="likeButton" pButton type="button" (click)="likeOrNot(likeId)" icon="pi {{ liked ? 'pi-heart-fill' : 'pi-heart' }}" class="p-button-danger p-button-rounded" style="position: absolute; right: 5px; bottom: 5px;"></button>
+</p-card>
+

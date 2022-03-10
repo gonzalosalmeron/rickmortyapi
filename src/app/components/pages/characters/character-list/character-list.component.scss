@@ -1,0 +1,174 @@
+.col { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.element {
+    margin: 10px;
+}
+
+.buttonGoTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    visibility: visible;
+}
+
+// CARD CSS
+
+.card {
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid rgba(128, 128, 128, 0.226);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 2px 15px -8px #f8f8f8; 
+    box-shadow: 0px 2px 15px -8px #f8f8f8;
+    transition-duration: 0.3s;
+}
+
+.p-card:hover {
+    transform: scale(1.05);
+}
+
+.p-card-header {
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.p-card-body {
+    text-align: center;
+}
+
+.p-card .p-card-body {
+    padding: 15px 10px;
+}
+
+.p-card-title {
+    font-family: chakra-bold;
+    color: rgb(18, 16, 19);
+    margin-top: 15px
+    
+}
+
+.p-card .p-card-subtitle {
+    color: rgb(144, 37, 148);
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: rubik-regular;
+}
+
+
+.p-card {
+    position: relative;
+    .p-card-content {
+        padding: 0;
+    }
+    .p-card-body {
+        background-color: white;
+        border-radius: 20px;
+    }
+}
+
+
+img {
+    border-radius: 100% !important;
+    width: 200px !important;
+    margin-bottom: -20px;
+    -webkit-box-shadow: 0px 6px 15px -8px #3D3D3D; 
+    box-shadow: 0px 6px 15px -8px #3D3D3D;
+    cursor: pointer;
+}
+
+// LIKE BUTTON
+#likeButton {
+    width: 34px;
+    height: 34px;
+    z-index: 20;
+}
+
+.p-button.p-button-danger:enabled:focus {
+    box-shadow: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    transform: scale(0.6);
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+input:checked + .slider {
+    background-color: #acacac;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #646464;
+}
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+}
+  
+  .slider.round:before {
+    border-radius: 50%;
+}
+
+#switchContainer {
+    display: flex;
+    padding-right: 26px;
+    margin-top: 30px;
+    justify-content: end;
+    align-items: center;
+
+    p {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+}
+
+
+
+

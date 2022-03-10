@@ -1,0 +1,28 @@
+<div class="container" infinite-scroll (scrolled)="onScrollDown()">
+    <div id="switchContainer" *ngIf="this.authService.isLoggedIn">
+        <p>Show only favorites</p>
+        <label class="switch">
+            <input type="checkbox" [(ngModel)]="checked" (click)="showLiked()" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="col">
+        <div class="element" *ngFor="let character of characters" [hidden]="checked">
+            <app-character-card [id]="character.id" [name]="character.name" [species]="character.species" [image]="character.image" [hidden]="showOrNot"></app-character-card>
+        </div>
+
+        <div class="element" *ngFor="let character of charactersLiked" [hidden]="!checked">
+            <app-character-card [id]="character.id" [name]="character.name" [species]="character.species" [image]="character.image" [hidden]="showOrNot"></app-character-card>
+        </div>
+    </div>
+    
+</div>
+<div *ngIf="(characters.length == 0) || (charactersLiked.length == 0 && checked)" style="display: flex; align-items: center; margin-top: 90px;">
+    <img src="https://www.ajournalofmusicalthings.com/wp-content/uploads/2020/11/RickAndMorty_MortyConfusedBlink1500.gif" alt="">
+    <p style="color: white;margin: 0 80px; font-size: 40px; font-family: fantasy;    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;">No results...</p>
+    <img src="https://images.squarespace-cdn.com/content/v1/528252b7e4b00150d03a4848/1503802786036-ZOOD48EI07ZEY2B3N3I9/RickAndMorty_RickAngryBurp1500.gif" alt="">
+</div>
+
+
+<p-scrollTop></p-scrollTop>

@@ -1,0 +1,49 @@
+.img {
+    max-width: 50px;
+    border-radius: 20px;
+}
+
+#table {
+    margin-top: 30px;
+}
+
+.p-datatable .p-datatable-tbody > tr {
+    background-color: rgba(0, 0, 0, 0.822) !important;
+}
+
+th {
+    background-color: rgba(202, 202, 202, 0.212) !important;
+    color: rgb(228, 228, 228) !important;
+}
+
+td {
+    color: blanchedalmond!important;;
+    font-weight: 700;
+    
+}
+
+.p-paginator-bottom.p-paginator.p-component {
+    background-color: rgba(12, 12, 12, 0.459);
+}
+
+
+.p-dialog-title {
+    font-family: rubik-bold;
+    color: rgb(19, 19, 19);
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.text-dialog {
+    font-family: rubik-medium;
+    color: rgb(26, 26, 26);
+}
+.p-resizable-handle.ng-tns-c108-0.ng-star-inserted {
+    background: #a855f7 !important;
+    border-radius: 20px !important;
+}
+
+
+.p-dialog-content {
+    border-radius: 0 0 20px 20px;
+}

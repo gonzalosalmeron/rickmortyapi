@@ -1,0 +1,62 @@
+<div id="table">
+    <p-table [paginator]="true" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [value]="characters" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Picture</th>
+                <th pSortableColumn="name">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Name
+                        <p-sortIcon field="name"></p-sortIcon>
+                        <p-columnFilter type="text" field="name" display="menu" class="p-ml-auto"></p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="species">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Species
+                        <p-columnFilter type="text" field="species" display="menu" class="p-ml-auto"></p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="gender">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Gender
+                        <p-columnFilter type="text" field="gender" display="menu" class="p-ml-auto"></p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="location">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Location
+                        <p-columnFilter type="text" field="location.name" display="menu" class="p-ml-auto"></p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="status">
+                    <div class="p-d-flex p-jc-between p-ai-center">
+                        Status
+                        <p-columnFilter type="text" field="status" display="menu" class="p-ml-auto"></p-columnFilter>
+                    </div>
+                </th>
+                <th>Info</th>
+                
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-character>
+            <tr>
+                <td><img class="img" src="{{character.image}}" alt=""></td>
+                <td>{{character.name}}</td>
+                <td>{{character.species}}</td>
+                <td>{{character.gender}}</td>
+                <td>{{character.location.name}}</td>
+                <td><p-badge *ngIf="character.status == 'Alive'" value="{{character.status}}" severity="success" > </p-badge>
+                    <p-badge *ngIf="character.status == 'unknown'" severity="info" value="{{character.status}}"></p-badge>
+                    <p-badge *ngIf="character.status == 'Dead'" severity="danger" value="{{character.status}}"></p-badge>
+                </td>
+                <td>
+                    <p-button label="Click" (click)="showDialog(character)"></p-button>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+
+<p-dialog  header="About this character" [(visible)]="display" [style]="{width: '50vw'}">
+    <p class="text-dialog">This character was born {{character.created}} on the planet {{character.origin.name}} and is now on planet {{character.location.name}}. Has been present in {{character.episode.length}} episodes</p>
+</p-dialog>

@@ -1,0 +1,29 @@
+<div class="displayTable">
+    <div class="displayTableCell">
+      <div class="authBlock">
+        <h2 style="margin: 0 0 10px 0; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">Sign In</h2>
+
+        <div class="formGroup" style="margin-top: 30px;">
+          <label for="username1" style="display: block;">Email</label>
+          <input id="username1" type="username" class="p-inputtext-sm" aria-describedby="username1-help" pInputText #userName required>
+        </div>
+
+        <div class="formGroup" style="margin-top: 14px; margin-bottom: 10px;">
+          <label for="username1" style="display: block;">Password</label>
+          <input id="username1" type="password" class="p-inputtext-sm" aria-describedby="username1-help" pInputText #userPassword required>
+        </div>
+
+        <!-- Sign in email -->
+        <div class="formGroup">
+          <button pButton pRipple type="button" label="Login" class="p-button-secondary p-button-sm" (click)="authService.SignIn(userName.value, userPassword.value)"></button>
+        </div>
+        <!-- Sign in Google -->
+        <div class="formGroup" style="margin-top: 15px;">
+          <button pButton pRipple type="button" label="Login with google" class="p-button-primary p-button-sm" (click)="authService.GoogleAuth()"></button>
+        </div>
+
+        <p class="registerText">Don't have an account? <a href="/register" style="color: rgb(103, 103, 190);">Register here</a></p>
+      </div>
+    </div>
+</div>
+  

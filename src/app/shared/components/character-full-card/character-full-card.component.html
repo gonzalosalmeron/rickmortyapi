@@ -1,0 +1,10 @@
+<p-card header="{{name}}" subheader="{{species}}" [style]="{width: '250px'}" styleClass="card">
+    <p-badge styleClass="budgeeee" *ngIf="status == 'Alive'" size="large" value="{{status}}" severity="success" > </p-badge>
+    <p-badge styleClass="budgeeee" *ngIf="status == 'unknown'" size="large" severity="info" value="{{status}}"></p-badge>
+    <p-badge styleClass="budgeeee" *ngIf="status == 'Dead'" size="large" severity="danger" value="{{status}}"></p-badge>
+    <ng-template pTemplate="header">
+        <img alt="Card" src="{{ image }}">
+    </ng-template>
+    <button id="likeButton" pButton type="button" (click)="likeOrNot(likeId)" icon="pi {{ liked ? 'pi-heart-fill' : 'pi-heart' }}" class="p-button-danger p-button-rounded" style="position: absolute; right: 5px; bottom: 5px;"></button>
+</p-card>
+

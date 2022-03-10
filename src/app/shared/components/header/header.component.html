@@ -1,0 +1,15 @@
+<p-menubar [model]="items" styleClass="menuBar">
+    <ng-template pTemplate="start">
+    </ng-template>
+    <div style="display: flex;">
+        <app-form-search></app-form-search>
+        <div *ngIf="this.authService.isLoggedIn">
+            <p-button label="Logout" (onClick)="logout()"></p-button>
+        </div>
+        <div *ngIf="!this.authService.isLoggedIn">
+            <p-button label="Login" (onClick)="goLogin()" ></p-button>
+        </div>
+    </div>
+    
+</p-menubar>
+

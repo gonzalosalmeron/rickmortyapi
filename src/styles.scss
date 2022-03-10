@@ -1,0 +1,39 @@
+// CUSTOM CSS
+.container {
+    margin-top: 20px;
+    margin: auto;
+    max-width: 960px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "rubik-regular";
+    src: local("rubik-regular"), url(./assets/fonts/Rubik-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "rubik-medium";
+    src: local("rubik-medium"), url(./assets/fonts/Rubik-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "rubik-bold";
+    src: local("rubik-bold"), url(./assets/fonts/Rubik-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "chakra-medium";
+    src: local("chakra-medium"), url(./assets/fonts/ChakraPetch-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "chakra-bold";
+    src: local("chakra-bold"), url(./assets/fonts/ChakraPetch-Bold.ttf) format("truetype");
+}
+
+.color {
+    color: red;
+}

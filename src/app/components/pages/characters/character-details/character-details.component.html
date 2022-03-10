@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="col">
+        <app-character-full-card [routerLink]="['/character-details', character.id]" [id]="character.id" [name]="character.name" [species]="character.species" [image]="character.image" [status]="character.status"></app-character-full-card>
+        <div id="moreInfo">
+            <h1>About this character</h1>
+            <p>This character was born {{this.age}} on the planet {{character.origin.name}} and is now on planet {{character.location.name}}</p>
+            <p>Has been present in {{character.episode.length}} episodes</p>
+        </div>
+        <div id="chartPolarArea">
+            <p-chart type="polarArea" [data]="dataPolarArea"></p-chart>
+        </div>
+
+        <div id="chartRadar">
+            <p-chart type="radar" [data]="dataRadar"></p-chart>
+        </div>
+        
+
+        
+    </div>
+    
+</div>
