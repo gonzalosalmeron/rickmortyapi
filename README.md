@@ -7,7 +7,7 @@
   <br>
 
   <p align="center">
-    <a href="https://youtu.be/W98SmA-GSCA">Ver video</a>
+    <a href="https://www.youtube.com/watch?v=lhK-jZ0uWFU&ab_channel=Gonzaakbar">Ver video</a>
   </p>
 </p>
 
