@@ -45,3 +45,13 @@ RickMortyApi está basada para el uso en dispositivos de escritorio pero tambié
 <img src="media/5.png" alt="Logo" width="600">
 <br>
 <img src="media/6.png" alt="Logo" width="600">
+<br>
+<img src="media/11.png" alt="Logo" width="600">
+<br>
+<img src="media/9.png" alt="Logo" width="600">
+<br>
+<img src="media/10.png" alt="Logo" width="600">
+<br>
+<img src="media/8.png" alt="Logo" width="600">
+<br>
+<img src="media/7.png" alt="Logo" width="600">
